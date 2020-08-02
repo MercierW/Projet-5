@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head id="head">
+    <title class="tittle"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/page-produit.css">
+    <link rel="shortcut icon" type="image/png" href="images/Favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <div class="page">
+            <header class="header">
+                <img src="images/Logo.png" alt="logo">
+                <nav class="header__nav">
+                    <ul class="ul">
+                        <a href="index.html"><li><img class="logo-svg" src="images/home-run.svg" alt="maison">Maison des oursons</li></a>
+                        <a href="panier.html"><li id="box-cart"><img class="logo-svg" src="images/online-store.svg" alt="caddie">Panier</li></a>   
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="box-produit reveal">
+                <div class="box-peluche"><img class="peluche reveal reveal-visible"
+                        src="" alt="Peluche-ourson">
+                </div>
+
+                <aside id="aside">
+                    <h1 class="h1-model"></h1>
+                    <p class="color-price"></p>
+                    <div class="box-aside">
+                        <p class="p-model"></p>
+                            <label for="couleur">Choix de couleur : </label>
+                            <select class="select" name="couleur" id="couleur">
+                            </select>
+                    </div>
+                    <a href="panier.html">
+                        <div class="btn-panier">Ajouter au panier</div>
+                    </a>
+
+                    <ul>
+                        <li><span><img class="svg" src="images/check.svg" alt="tick"></span>Couture fait main</li>
+                        <li><span><img class="svg" src="images/check.svg" alt="tick"></span>Coton 100% bio</li>
+                        <li><span><img class="svg" src="images/check.svg" alt="tick"></span>Anti-allergique</li>
+                    </ul>
+                    <div class="box">
+                        <div class="box__text-c">
+                            <img class="box__img" src="images/bouclier-vert.svg" alt="bouclier">
+                            <p>Paiment sécurisé</p>
+                        </div>
+                        <div class="box__text-c" id="Chrono">
+                            <img class="box__img" src="images/chronometre-couleur.svg" alt="chronometre">
+                            <p>Livraison rapide</p>
+                        </div>
+                        <div class="box__text-c">
+                            <img class="box__img" src="images/support-couleur.svg" alt="support-client">
+                            <p>Support 24/24</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <footer class="footer">
+                    <div class="footer-box-txt">
+                        <div class="footer-box-txt__sous-txt">
+                            <h4>À PROPOS</h4>
+                            <p><a href="#">Qui somme-nous ?</a></p>
+                        </div>
+                        <div class="footer-box-txt__sous-txt">
+                            <h4>AIDE</h4>
+                            <p><a href="#">Nous contacter</a></p>
+                            <p><a href="#">FAQ</a></p>
+                        </div>
+                    </div>
+                    <nav class="footer__nav">
+                        <li><a href="#"><img class="logo-svg" src="images/twitter.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img class="logo-svg" src="images/facebook.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img class="logo-svg" src="images/instagram.svg" alt="instagram"></a></li>
+                    </nav>
+            </footer>
+        </div>
+        <script type="text/javascript" src="/app.js/ajax.js"></script>
+        <script type="text/javascript" src="/app.js/Page-produit.js"></script>
+    </body>
+</html>

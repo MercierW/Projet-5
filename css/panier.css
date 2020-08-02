@@ -1,0 +1,362 @@
+body {
+  height: 700px;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.box__table {
+  width: 700px;
+  height: 100%;
+  box-shadow: 0px 0px 2px blanchedalmond;
+  background-color: white;
+}
+
+.tableau {
+  width: 100%;
+  height: 80%;
+  border-collapse: collapse;
+  margin-top: 1%;
+}
+
+th {
+  width: 100px;
+}
+
+.tr {
+  border-bottom: 1px solid blanchedalmond;
+  color: grey;
+}
+
+.trSize {
+  font-size: 18px;
+}
+
+.inputPrix {
+  width: 30px;
+}
+
+.thImg {
+  width: 25px;
+  height: auto;
+  transition: all 400ms;
+}
+.thImg:hover {
+  transform: scale(1.15);
+  background-color: rgba(237, 97, 97, 0.5);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.thW {
+  width: 20px;
+}
+
+tr {
+  text-align: center;
+}
+
+.PrixT {
+  font-size: 25px;
+}
+
+.box-table-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.box-table-2__total {
+  width: 200px;
+  height: 100%;
+  box-shadow: 0px 0px 2px blanchedalmond;
+  background-color: white;
+  margin-top: 5%;
+}
+
+.box-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+}
+.box-form__bgc {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 2px blanchedalmond;
+  background-color: #f5ebe1;
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  margin-right: 8%;
+}
+
+.btn-sub {
+  text-align: end;
+  margin-top: 5%;
+}
+
+.inputForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.spanInput {
+  width: 100%;
+  text-align: right;
+  margin-right: 5%;
+}
+
+.inputBorder {
+  border-radius: 3px;
+  border-style: none;
+  background-color: blanchedalmond;
+  border: 1px solid #bababa;
+}
+
+.inputBtnBorder {
+  border-radius: 10px;
+  border-style: none;
+  width: 260px;
+  height: 50px;
+  font-size: 18px;
+  font-family: "Sen", sans-serif;
+  text-transform: uppercase;
+  background-color: #40dd45;
+  color: #f5ebe1;
+  transition: all 400ms;
+}
+.inputBtnBorder:hover {
+  transform: scale(1.15);
+  background-color: rgba(237, 97, 97, 0.5);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.display {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  body {
+    height: 100%;
+  }
+
+  .inputForm {
+    font-size: 25px;
+  }
+
+  .inputBtnBorder {
+    width: 400px;
+    font-size: 25px;
+  }
+
+  .form {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .box-produit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .peluche {
+    margin-right: 0%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  aside p {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .box-aside {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .box-aside p {
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 50px;
+  }
+
+  .btn-panier {
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 40px;
+  }
+
+  aside ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  aside {
+    margin-bottom: 20%;
+  }
+
+  .box {
+    justify-content: center;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 400px;
+    height: 150px;
+  }
+
+  .header__nav {
+    margin-right: 0%;
+  }
+
+  #box-cart {
+    width: 130px;
+    margin-left: 0%;
+    margin-top: 25%;
+  }
+
+  .header__nav li {
+    justify-content: end;
+    font-size: 35px;
+    width: 400px;
+  }
+
+  .logo-svg {
+    width: 50px;
+    height: auto;
+    margin-right: 4%;
+  }
+
+  .p-model {
+    font-size: 60px;
+  }
+
+  .select {
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
+  }
+
+  aside li {
+    font-weight: bold;
+    width: 200px;
+    line-height: 30px;
+    list-style: none;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .svg {
+    width: 30px;
+    height: auto;
+  }
+
+  .box__img {
+    width: 60px;
+    height: auto;
+  }
+
+  .box {
+    display: flex;
+    margin: 10% 0% 20% 0%;
+  }
+
+  .box p {
+    font-size: 30px;
+  }
+
+  .footer__nav {
+    display: flex;
+    width: 200px;
+    list-style: none;
+  }
+
+  .footer-box-txt__sous-txt {
+    margin: 0% 0% 0% 5%;
+    font-size: 30px;
+  }
+
+  body {
+    height: 100%;
+    width: 700px;
+  }
+
+  .page {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 560px;
+  }
+
+  .inputForm {
+    font-size: 25px;
+  }
+
+  .inputBtnBorder {
+    width: 400px;
+    font-size: 25px;
+  }
+
+  .form {
+    width: 400px;
+    height: 400px;
+  }
+
+  .trSize {
+    font-size: 30px;
+  }
+
+  .PrixT {
+    font-size: 30px;
+  }
+
+  .inputPrix {
+    width: 50px;
+    height: 40px;
+    font-size: 35px;
+  }
+
+  .BTNADD {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+
+  .BTNREM {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+
+  .cart-price {
+    font-size: 30px;
+  }
+
+  .thImg {
+    width: 35px;
+  }
+}
+
+/*# sourceMappingURL=panier.css.map */

@@ -1,0 +1,349 @@
+
+
+$color-p: #841d42;
+$color-s: #f5ebe1;
+
+
+
+html, body{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sen', sans-serif;
+    background-color: #efefef;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+.display {
+    display: none;
+}
+
+#model {
+    display: none;
+}
+
+// HEADER //
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: $color-p;
+    
+    &__nav li{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        color: $color-s;
+        background-color: none;
+        transition: all 400ms;
+        
+        &:hover{
+            transform: scale(1.05);
+            background-color: rgba(239,239,239,0.2);
+        }
+    }
+    
+    &__nav{
+        margin-right: 3%;
+    }    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 500px;
+}
+
+.logo-svg{
+    width: 25px;
+    height: auto;
+    margin-right: 4%;
+}
+
+#box-cart{
+    width: 130px;
+    margin-left: 20%;
+}
+
+
+
+// HEADER //
+
+// BODY //
+.section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://a-static.besthdwallpaper.com/saint-valentin-ours-en-peluche-couple-mignon-fond-d-ecran-6000x2000-13522_109.jpg);
+    background-position: bottom 10%;
+    background-size: cover;
+
+    &__bgc{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
+        
+        &__sous-txt{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 600px;
+            color: $color-s;
+        }
+    }
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: $color-p;
+}
+
+.titreP{
+    color: $color-s;
+}
+
+.trait{
+    border-bottom: 1px solid $color-s;
+}
+
+h2{
+    text-align: center;    
+}
+
+p{
+    text-align: center;
+}
+
+#img-coton{
+    width: 300px;
+}
+
+#Chrono{
+    margin: 0% 5% 0% 5%;
+}
+
+.page{
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 250px;
+}
+
+.peluche{
+    width: 500px;
+    float: left;
+    margin-right: 2%;
+}
+
+.btn{
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 3%;
+    padding: 3%;
+    font-family: 'Sen', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #40dd45;
+    color: $color-s;
+    overflow: hidden;
+    transition: all 400ms;
+
+    &:hover{
+        transform: scale(1.05);
+        border-radius: 20px;
+    }
+}
+
+.section-article{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+
+
+    
+    &__text{
+        text-align: center;
+        width: 800px;
+        background-color: $color-p;
+        color: $color-s;
+        padding: 2%;
+        border-radius: 10px;
+    }
+
+}
+
+.box{
+    display: flex;
+    margin: 5% 0% 0% 0%;
+    
+    &__img{
+        width: 40px;
+        height: auto;
+    }
+    
+    &__text-c{
+        text-align: center;
+        line-height: 0px;
+        font-weight: bold;
+    }
+}
+
+
+// BODY //
+
+
+// FOOTER //
+
+.footer{
+    background-color: $color-p;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 1%;
+
+    &__nav{
+        display: flex;
+        width: 100%;
+        list-style: none;
+    }
+    
+    &__nav li{
+        margin-left: 1%;
+        transition: all 400ms;
+        height: 20px;
+        
+        &:hover{
+            opacity: 0.7;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.footer-box-txt{
+    display: flex;
+    color: $color-s;
+    width: 100%;
+    
+    &__sous-txt{
+        margin: 0% 0% 0% 5%;
+        
+    }
+}
+
+.footer-box-txt p{
+    text-align: start;
+}
+
+.footer-box-txt a {
+    color: $color-s;
+    transition: all 200ms;
+    
+    &:hover{
+        border-bottom: solid 2px $color-s;
+    }
+}
+
+// FOOTER //
+
+// CSS pour JS //
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.reveal-2 {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+// Media query //
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    .section {
+        background-image: url(https://a-static.besthdwallpaper.com/saint-valentin-ours-en-peluche-couple-mignon-fond-d-ecran-6000x2000-13522_109.jpg);
+        background-position: 40%;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    body {
+        width: 690px;
+        height: 1280px;
+    }
+    .section{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-image: url(https://a-static.besthdwallpaper.com/saint-valentin-ours-en-peluche-couple-mignon-fond-d-ecran-6000x2000-13522_109.jpg);
+        background-position: 40%;
+        background-size: cover;
+    }
+}
+
+// CSS page Remerciement //
+
+.text {
+    color: rgb(98, 196, 107);
+    font-size: 30px;
+}
+
+.orderId {
+    text-decoration: underline;
+    color: rgb(237, 142, 183);
+}
+
+.total {
+    text-decoration: underline;
+    color: rgb(237, 142, 183);
+}
+
+.gif {
+    width: 250px;
+    height: auto;
+}
+
+.divgif {
+    display: flex;
+    justify-content: center;
+}
+
+.boxTH {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+}
