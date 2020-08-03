@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -29,19 +30,16 @@ img {
   border-bottom: 1px solid black;
   background-color: #841d42;
 }
-.header__nav li {
-  list-style: none;
+.header__nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
   height: 40px;
   border-radius: 10px;
   color: #f5ebe1;
-  background-color: none;
   transition: all 400ms;
 }
-.header__nav li:hover {
+.header__nav a:hover {
   transform: scale(1.05);
   background-color: rgba(239, 239, 239, 0.2);
 }
@@ -49,16 +47,23 @@ img {
   margin-right: 3%;
 }
 
+#homeBox {
+  width: 200px;
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+.ul li {
+  list-style: none;
 }
 
 .ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
   width: 500px;
 }
 
@@ -199,16 +204,19 @@ p {
 .footer__nav {
   display: flex;
   width: 100%;
-  list-style: none;
 }
 .footer__nav li {
   margin-left: 1%;
   transition: all 400ms;
-  height: 20px;
 }
 .footer__nav li:hover {
   opacity: 0.7;
   transform: translateY(-3px);
+}
+
+.ulFooter {
+  display: contents;
+  list-style: none;
 }
 
 .footer-box-txt {
@@ -254,6 +262,28 @@ p {
     background-position: 40%;
     background-size: cover;
   }
+
+  #homeBox {
+    width: 300px;
+    font-size: 25px;
+  }
+
+  #cartBox {
+    font-size: 25px;
+    width: 150px;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .header__nav {
+    margin-right: 3%;
+  }
+
+  #box-cart {
+    margin-left: 10%;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   body {
@@ -269,6 +299,52 @@ p {
     background-image: url(https://a-static.besthdwallpaper.com/saint-valentin-ours-en-peluche-couple-mignon-fond-d-ecran-6000x2000-13522_109.jpg);
     background-position: 40%;
     background-size: cover;
+  }
+  .section__bgc__sous-txt {
+    display: none;
+  }
+
+  #homeBox {
+    width: 350px;
+    font-size: 30px;
+  }
+
+  #cartBox {
+    font-size: 30px;
+    width: 150px;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .header__nav {
+    margin-right: 3%;
+  }
+
+  #box-cart {
+    margin-left: 0%;
+  }
+
+  .footer__nav {
+    display: flex;
+    width: 200px;
+    list-style: none;
+  }
+
+  .footer {
+    height: 230px;
+  }
+
+  .footer-box-txt__sous-txt {
+    margin: 0% 0% 0% 5%;
+    font-size: 30px;
+  }
+
+  .logo-svg {
+    width: 50px;
+    height: auto;
+    margin-right: 4%;
   }
 }
 .text {
