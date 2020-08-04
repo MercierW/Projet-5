@@ -131,23 +131,30 @@ console.log(data)
 let form = document.getElementById('Form');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    // Information à envoyé au serveur sous forme d'objet //
-    (data.contact = {
+    if (
+      validName(form.nom) &&
+      validPrenom(form.prenom) &&
+      validEmail(form.email) &&
+      validAdress(form.adresse) &&
+      validCity(form.city)
+    ) {
+      // Information à envoyé au serveur sous forme d'objet //
+      (data.contact = {
         lastName: document.getElementById("nom").value,
         firstName: document.getElementById("prenom").value,
         email: document.getElementById("email").value,
         address: document.getElementById("adresse").value,
         city: document.getElementById("city").value,
-    }),
-    // Fonction POST AJAX qui envoie les données du panier au serveur //
-    postAjaxCall("http://localhost:3000/api/teddies/order", data)
-        .then(
-            function (reponse) {
-                localStorage.setItem("Reponse", reponse);
-                document.location = "remerciement.html";
-            }
+      }),
+        // Fonction POST AJAX qui envoie les données du panier au serveur //
+        postAjaxCall("http://localhost:3000/api/teddies/order", data).then(
+          function (reponse) {
+            localStorage.setItem("Reponse", reponse);
+            document.location = "remerciement.html";
+          }
         );
-    localStorage.removeItem('Articles');
+      localStorage.removeItem("Articles");
+    }
 });
 
 
